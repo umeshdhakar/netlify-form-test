@@ -80,22 +80,6 @@
             </div>
         </div>
     </section>
-    <script>
-        $(function(){
-        $("#contactForm").submit(function(e) {
-//   e.preventDefault();
-
-  var $form = $(this);
-  $.post($form.attr("action"), $form.serialize()).done(function(data) {
-    $(".notification.is-success").show().fadeOut(2000, 'swing');
-      console.log(data);
-  }).fail(function() {
- $(".notification.is-warning").show().fadeOut(2000, 'swing');
-  });
-});
-        });
-    
-    </script>
 </body>
 
 </html>
