@@ -61,11 +61,11 @@
                                     <button type="reset" class="button is-info" name="reset"> <span>Reset</span><span class="icon"><i class="fas fa-history"></i></span> </button>
                                 </div>
                             </div>
-                            <div class="notification is-success has-text-centered">
+                            <div class="notification is-success has-text-centered" style=""display:none">
                                 <button class="delete"></button>
                                 <span>Thanks for your</span> <span class="icon"><i class="fas fa-comment"></i></span>
                             </div>
-                            <div class="notification is-warning has-text-centered">
+                            <div class="notification is-warning has-text-centered" style=""display:none">
                                 <button class="delete"></button>
                                 <span>Oops!, Something went wrong.</span> <span class="icon"><i class="fas fa-exclamation-triangle"></i></span>
                             </div>
@@ -81,7 +81,9 @@
 
   var $form = $(this);
   $.post($form.attr("action"), $form.serialize()).then(function() {
-    alert("Thank you!");
+    $(".notification is-success").show();
+  }).fail(function() {
+    $(".notification is-warning").show();
   });
 });
     </script>
