@@ -83,7 +83,7 @@
     <script>
         $(function(){
         $("#contactForm").submit(function(e) {
-  e.preventDefault();
+//   e.preventDefault();
 
   var $form = $(this);
   $.post($form.attr("action"), $form.serialize()).done(function(data) {
