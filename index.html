@@ -86,7 +86,7 @@
   e.preventDefault();
 
   var $form = $(this);
-  $.post($form.attr("action"), $form.serialize()).then(function() {
+  $.post($form.attr("action"), $form.serialize()).done(function() {
     $(".notification.is-success").show().fadeOut(2000, 'swing');
   }).fail(function() {
  $(".notification.is-warning").show().fadeOut(2000, 'swing');
