@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</head>
+
+<body>
+    <section class="hero is-gray is-fullheight">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Hello World
+                </h1>
+                <p class="subtitle">
+                    <strong>Bulma</strong>
+                </p>
+                <div class="columns">
+                    <div class="column is-5">
+                        <form name="contactForm" method="post" netlify>
+                            <div class="field">
+                                <div class="control has-icons-right">
+                                    <input type="text" class="input is-rounded" name="name" placeholder="Name">
+                                    <span class="icon is-small is-right">
+                                <i class="fas fa-user"></i>
+                                </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control has-icons-right">
+                                    <input type="email" class="input is-rounded" name="email" placeholder="Email">
+                                    <span class="icon is-small is-right">
+                                <i class="fas fa-envelope"></i>
+                                </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control has-icons-right">
+                                    <input type="text" class="input is-rounded" name="number" placeholder="Contact">
+                                    <span class="icon is-small is-right">
+                                <i class="fas fa-phone"></i>
+                                </span>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="control has-icons-right">
+                                    <textarea class="textarea" type="text" name="message" placeholder="Write message here...">
+                                </textarea>
+                                </div>
+                            </div>
+                            <div class="field is-grouped">
+                                <div class="control">
+                                    <button type="submit" class="button is-primary" name="submit"> <span>Send</span><span class="icon"><i class="fas fa-paper-plane"></i></span> </button>
+                                </div>
+                                <div class="control">
+                                    <button type="reset" class="button is-info" name="reset"> <span>Reset</span><span class="icon"><i class="fas fa-history"></i></span> </button>
+                                </div>
+                            </div>
+                            <div class="notification is-success has-text-centered">
+                                <button class="delete"></button>
+                                <span>Thanks for your</span> <span class="icon"><i class="fas fa-comment"></i></span>
+                            </div>
+                            <div class="notification is-warning has-text-centered">
+                                <button class="delete"></button>
+                                <span>Oops!, Something went wrong.</span> <span class="icon"><i class="fas fa-exclamation-triangle"></i></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
