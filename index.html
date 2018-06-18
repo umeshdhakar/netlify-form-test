@@ -87,9 +87,9 @@
 
   var $form = $(this);
   $.post($form.attr("action"), $form.serialize()).then(function() {
-    $(".notification.is-success").show().hide;
+    $(".notification.is-success").show().fadeOut(2000, 'swing');
   }).fail(function() {
-    $(".notification.is-warning").show();
+ $(".notification.is-warning").show().fadeOut(2000, 'swing');
   });
 });
         });
