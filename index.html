@@ -83,6 +83,7 @@
   var $form = $(this);
   $.post($form.attr("action"), $form.serialize()).then(function() {
     $(".notification is-success").show();
+      alert("done");
   }).fail(function() {
     $(".notification is-warning").show();
   });
