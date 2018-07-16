@@ -87,10 +87,10 @@
   e.preventDefault();
 
   var $form = $(this);
-  $.post($form.attr("action"), $form).then(function() {
-    alert("Thank you!");
+  $.post($form.attr("action"), $form.serialize()).then(function() {
+     $(".notification.is-success").show().fadeOut(2000, 'swing');
   }).fail(function(){
-    alert("Oops!");
+    $(".notification.is-warning").show().fadeOut(2000, 'swing');
   });
 });
         /*$("#contactForm").submit(function(e) {
