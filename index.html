@@ -82,8 +82,16 @@
         </div>
     </section>
      <script>
-        /* $(function(){
-        $("#contactForm").submit(function(e) {
+         $(function(){
+             $("#contactForm").submit(function(e) {
+  e.preventDefault();
+
+  var $form = $(this);
+  $.post($form.attr("action"), $form.serialize()).then(function() {
+    alert("Thank you!");
+  });
+});
+        /*$("#contactForm").submit(function(e) {
 //   e.preventDefault();
 
   var $form = $(this);
@@ -94,8 +102,9 @@
  $(".notification.is-warning").show().fadeOut(2000, 'swing');
   });
 });
-        });
-    */
+    */    });
+    
+         
     </script>
 </body>
 
